@@ -13,7 +13,7 @@ ul #playlist {
 ul #playlist li {
     border-bottom: 1px solid #a9a9a9;
     padding: 10px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
+    background-image: -webkit-linear-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
     background-image: -moz-linear-gradient(#f9f9f9, #e3e3e3);
     background-image: -ms-linear-gradient(#f9f9f9, #e3e3e3);
     background-image: -o-linear-gradient(#f9f9f9, #e3e3e3);
