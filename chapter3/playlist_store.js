@@ -7,7 +7,7 @@ function loadPlaylist() {
     var playlustArray = getSavedSongs();
     var ul = document.getElementById("playlist");
     if (playlistArray != null) {
-        for (var i = 0; i < playlistArray.length; i++) {
+        for (var i=0; i<playlistArray.length; i++) {
             var li = document.createElement("li");
             li.innerHTML = playlistArray[i];
             ul.appendChild(li);
@@ -20,7 +20,7 @@ function getSavedSongs() {
 function getStoreArray(key) {
     var playlistArray = localStorage.getItem(key);
     if (playlistArray == null || playlist == "") {
-        playlistArray = newArray();
+        playlistArray = new Array();
     }
     else {
         playlistArray = JSON.parse(playlistArray);
