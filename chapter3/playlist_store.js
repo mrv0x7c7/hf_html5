@@ -6,9 +6,9 @@ function save(item) {
 function loadPlaylist() {
     var playlustArray = getSavedSongs();
     var ul = document.getElementById("playlist");
-    if (playlistArray !=null) {
+    if (playlistArray != null) {
         for (var i = 0; i < playlistArray.length; i++) {
-            var li = document.createElement ("li");
+            var li = document.createElement("li");
             li.innerHTML = playlistArray[i];
             ul.appendChild(li);
         }
@@ -25,5 +25,5 @@ function getStoreArray(key) {
     else {
         playlistArray = JSON.parse(playlistArray);
     }
-    return playlist;
+    return playlistArray;
 }
